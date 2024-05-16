@@ -9,15 +9,15 @@ function AddItem({ onAdd }) {
   const onSubmit = (e) => {
     e.preventDefault();
     if (id !== "" && title !== "" && price !== "") {
-      // Construct the new item object
+     
       const newItem = {
         id: id,
         title: title,
         price: price
       };
-      // Call the onAdd function passed from the parent component
+     
       onAdd(newItem);
-      // Reset the form fields
+     
       setId("");
       setTitle("");
       setPrice("");
